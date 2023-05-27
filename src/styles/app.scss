@@ -35,6 +35,9 @@ header{
             align-items: center;
         }
     }
+    .menu__el a{
+        color: #3D6B74;
+    }
     #sticky-menu{
         position: sticky;
         top:0;
@@ -48,10 +51,15 @@ header{
             display: flex;
             justify-content: flex-end;
         }
-        &li a {
-            display: block;
-            padding: 10px;
-            text-decoration: none;
+        .menu__el a{
+            color: #3D6B74;
+        }
+        a:hover,
+        a:focus{
+            color: red;
         }
     } 
+    #content{
+        height: 2000px;
+    }
 }
