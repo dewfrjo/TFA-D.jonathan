@@ -8,6 +8,13 @@ body {
   font-size: 20px;
 }
 
+h2 {
+  font-family: "Abhaya Libre", serif;
+  font-size: 57px;
+  font-weight: bold;
+  color: #E9F1F7;
+}
+
 header .logo {
   width: 45px;
   margin: 25px 0 0 40px;
@@ -19,31 +26,36 @@ header h1 {
   position: relative;
   left: 60px;
 }
-header .menu {
+
+.menu {
   width: 815px;
   position: absolute;
   right: -40px;
   background-color: #FFC800;
   padding-right: 40px;
   top: -148px;
+  z-index: 1;
 }
-header .menu__list {
+.menu__list {
   height: 80px;
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .menu__el a {
+
+.menu__el a {
   color: #3D6B74;
+  text-decoration: none;
 }
-header #sticky-menu {
+
+#sticky-menu {
   position: sticky;
   top: 0;
   float: right;
   right: 0;
 }
-header #sticky-menuul {
+#sticky-menuul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -51,13 +63,43 @@ header #sticky-menuul {
   display: flex;
   justify-content: flex-end;
 }
-header #sticky-menu .menu__el a {
+#sticky-menu .menu__el a {
   color: #3D6B74;
 }
-header #sticky-menu a:hover,
-header #sticky-menu a:focus {
+#sticky-menu a:hover,
+#sticky-menu a:focus {
   color: red;
 }
-header #content {
-  height: 2000px;
+
+.content {
+  height: 100vh;
+}
+
+.intro {
+  position: absolute;
+  top: 600px;
+  max-width: 740px;
+  right: 80px;
+}
+.intro__text {
+  margin-top: 33px;
+  line-height: 28px;
+  color: #E9F1F7;
+}
+
+.why {
+  position: absolute;
+  top: 1073px;
+  max-width: 740px;
+  right: 170px;
+}
+.why__text {
+  margin-top: 33px;
+  line-height: 28px;
+  color: #E9F1F7;
+}
+.why__text2 {
+  color: #E9F1F7;
+  line-height: 28px;
+  margin-top: 17px;
 }/*# sourceMappingURL=app.css.map */
