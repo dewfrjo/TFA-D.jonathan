@@ -12,6 +12,14 @@ h2{
     font-weight: bold;
     color: #E9F1F7;
 }
+h3{
+    font-family: 'Abhaya Libre', serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+p{
+    line-height: 28px;
+}
 
 header{
     .logo{
@@ -75,7 +83,7 @@ header{
   }  
 
 .content{
-    height: 100vh;
+    height: 500vh;
 }
 
 
@@ -86,29 +94,43 @@ header{
     right: 80px;
     &__text{
         margin-top: 33px;
-        line-height: 28px;
         color: #E9F1F7;
     }
 }
 .why{
     position: absolute;
     top: 1073px;
-    max-width: 740px;
+    max-width: 600px;
     right: 150px;
     &__text{
         margin-top: 33px;
-        line-height: 28px;
         color: #E9F1F7;
     }
     &__text2{
         color: #E9F1F7;
-        line-height: 28px;
         margin-top: 17px;
     }
 }
 .why-2{
     position: absolute;
-    top: 1300px;
-    max-width: 740px;
+    top: 1363px;
+    max-width: 530px;
     right: 80px;
+}
+.interview{
+    position: absolute;
+    top: 1725px;
+    margin-left: 80px;
+    &__text{
+        margin-top: 33px;
+        max-width: 740px;
+        font-size: 14px;
+    }
+}
+
+.concu{
+    position: absolute;
+    top: 2310px;
+    margin-left: 1.5em;
+    color: black;
 }
