@@ -51,13 +51,10 @@ header{
     top:0;
     float: right;
     right: 0;
-    &ul{
+    & ul{
         list-style: none;
         margin: 0;
-        padding: 0;
         overflow: hidden;
-        display: flex;
-        justify-content: flex-end;
     }
     .menu__el a{
         color: #3D6B74;
@@ -66,11 +63,21 @@ header{
     a:focus{
         color: red;
     }
+    a.active {
+        text-decoration: underline;
+      }
 } 
+
+.sticky {
+    width: 100%;
+    padding-right: 18px;
+    justify-content: space-around;
+  }  
 
 .content{
     height: 100vh;
 }
+
 
 .intro{
     position: absolute;
@@ -87,7 +94,7 @@ header{
     position: absolute;
     top: 1073px;
     max-width: 740px;
-    right: 170px;
+    right: 150px;
     &__text{
         margin-top: 33px;
         line-height: 28px;
@@ -98,4 +105,10 @@ header{
         line-height: 28px;
         margin-top: 17px;
     }
+}
+.why-2{
+    position: absolute;
+    top: 1300px;
+    max-width: 740px;
+    right: 80px;
 }
