@@ -15,6 +15,16 @@ h2 {
   color: #E9F1F7;
 }
 
+h3 {
+  font-family: "Abhaya Libre", serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+p {
+  line-height: 28px;
+}
+
 header .logo {
   width: 45px;
   margin: 25px 0 0 40px;
@@ -55,13 +65,10 @@ header h1 {
   float: right;
   right: 0;
 }
-#sticky-menuul {
+#sticky-menu ul {
   list-style: none;
   margin: 0;
-  padding: 0;
   overflow: hidden;
-  display: flex;
-  justify-content: flex-end;
 }
 #sticky-menu .menu__el a {
   color: #3D6B74;
@@ -70,9 +77,18 @@ header h1 {
 #sticky-menu a:focus {
   color: red;
 }
+#sticky-menu a.active {
+  text-decoration: underline;
+}
+
+.sticky {
+  width: 100%;
+  padding-right: 18px;
+  justify-content: space-around;
+}
 
 .content {
-  height: 100vh;
+  height: 500vh;
 }
 
 .intro {
@@ -83,23 +99,107 @@ header h1 {
 }
 .intro__text {
   margin-top: 33px;
-  line-height: 28px;
   color: #E9F1F7;
 }
 
 .why {
   position: absolute;
   top: 1073px;
-  max-width: 740px;
-  right: 170px;
+  max-width: 600px;
+  right: 150px;
 }
 .why__text {
   margin-top: 33px;
-  line-height: 28px;
   color: #E9F1F7;
 }
 .why__text2 {
   color: #E9F1F7;
-  line-height: 28px;
   margin-top: 17px;
+}
+
+.why-2 {
+  position: absolute;
+  top: 1363px;
+  max-width: 530px;
+  right: 80px;
+}
+
+.interview {
+  position: absolute;
+  top: 1725px;
+  margin-left: 80px;
+}
+.interview__text {
+  margin-top: 33px;
+  max-width: 740px;
+  font-size: 14px;
+}
+
+.concu {
+  position: absolute;
+  top: 2310px;
+  margin-left: 1.5em;
+  color: black;
+}
+.concu__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu--deroulant {
+  content: ">";
+  display: inline-block;
+  position: absolute;
+  top: 2485px;
+}
+.menu--deroulant__2 {
+  left: 300px;
+}
+.menu--deroulant__3 {
+  left: 600px;
+}
+.menu--deroulant__4 {
+  left: 800px;
+}
+.menu--deroulant__5 {
+  left: 1000px;
+}
+
+.menu--deroulant > :after {
+  content: ">";
+  margin-left: 7px;
+  display: inline-block;
+}
+
+@keyframes rotationFleche {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+.menu--deroulant:hover > :after {
+  animation: rotationFleche 0.2s linear forwards;
+}
+
+@keyframes apparitionSousmenu {
+  0% {
+    border-top: 3 px solid #d00000;
+  }
+  100% {
+    max-height: 50em;
+    border-top: 3px solid #d00000;
+  }
+}
+.menu--deroulant:hover > .sous-menu {
+  animation: apparitionSousmenu 1s forwards;
+}
+
+.sous-menu {
+  max-width: 170px;
+  text-align: left;
+  overflow: hidden;
+  max-height: 0;
+  font-size: 14px;
 }/*# sourceMappingURL=app.css.map */

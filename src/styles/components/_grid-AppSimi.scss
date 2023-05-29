@@ -1,0 +1,72 @@
+.app-simi{
+    display: grid;
+}
+.concu{
+    position: absolute;
+    top: 2310px;
+    margin-left: 1.5em;
+    color: black;
+
+    &__text{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.menu--deroulant{
+    content: '>';
+    display: inline-block;
+    position: absolute;
+    top: 2485px;
+
+    &__2{
+        left: 300px;
+    }
+    &__3{
+        left: 600px;
+    }
+    &__4{
+        left: 800px;
+    }
+    &__5{
+        left: 1000px;
+    }
+}
+.menu--deroulant > :after{
+    content: '>';
+    margin-left: 7px;
+    display: inline-block;
+}
+@keyframes rotationFleche {
+
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+.menu--deroulant:hover > :after{
+    animation: rotationFleche 0.2s linear forwards;
+}
+@keyframes apparitionSousmenu {
+    0%{
+        border-top: 3 px solid #d00000;
+    }
+    30%{
+    }
+    100%{
+        max-height: 50em;
+        border-top: 3px solid #d00000;
+    }
+}
+.menu--deroulant:hover > .sous-menu {
+    animation: apparitionSousmenu 1s forwards;
+}
+
+.sous-menu {
+    max-width: 170px;
+    text-align: left;
+    overflow: hidden;
+    max-height: 0;
+    font-size: 14px;
+}

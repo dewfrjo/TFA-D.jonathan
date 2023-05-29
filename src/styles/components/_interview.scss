@@ -1,0 +1,10 @@
+.interview{
+    position: absolute;
+    top: 1725px;
+    margin-left: 80px;
+    &__text{
+        margin-top: 33px;
+        max-width: 740px;
+        font-size: 14px;
+    }
+}

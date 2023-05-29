@@ -14,5 +14,3 @@ window.onscroll = function() {
       menu.classList.remove("sticky");
     }
   }
-  
-
