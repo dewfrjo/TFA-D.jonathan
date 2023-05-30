@@ -12,31 +12,33 @@ header{
     }
 }
 .menu{
-    width: 815px;
-    position: absolute;
-    right: -40px;
-    background-color: #FFC800;
-    padding-right: 40px;
-    top:-148px;
+    width: 60%;
     z-index: 1;
+    margin-left: auto;
     &__list{
+        background-color: #FFC800;
         height: 80px;
         list-style: none;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        padding: 0;
     }
 }
 .menu__el a{
     color: #3D6B74;
     text-decoration: none;
 }
-#sticky-menu{
+.sticky-menu{
     position: sticky;
-    top:0;
-    float: right;
-    right: 0;
-    & ul{
+    z-index: 1;
+    &__list{
+        background-color: #FFC800;
+        width: 60%;
+        height: 80px;
+        list-style: none;
+    }
+       & ul{
         list-style: none;
         margin: 0;
         overflow: hidden;
@@ -54,20 +56,22 @@ header{
 } 
 
 .sticky {
+    top:0;
+    right: 0;
     width: 100%;
-    padding-right: 18px;
-    justify-content: space-around;
   }  
 
 .content{
-    height: 300vh;
+    height: 100%;
 }
 
 .intro{
-    position: absolute;
-    top: 600px;
+    display: flex;
     max-width: 740px;
-    right: 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40%;
+    margin-top: 162px;
     &__text{
         margin-top: 33px;
         color: #E9F1F7;
