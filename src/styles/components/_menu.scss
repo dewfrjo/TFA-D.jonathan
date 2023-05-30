@@ -10,6 +10,12 @@ header{
         position: relative;
         left: 60px;
     }
+    .image-acc{
+        max-width: 60%;
+        display: flex;
+        margin-left: auto;
+        margin-top: -600px;
+    }
 }
 .menu{
     width: 60%;
@@ -66,14 +72,23 @@ header{
 }
 
 .intro{
-    display: flex;
-    max-width: 740px;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 40%;
     margin-top: 162px;
+    &__titre{
+        margin-top: -539px;
+        margin-left: 40%;
+    }
     &__text{
+        display: flex;
+        max-width: 740px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 40%;
         margin-top: 33px;
         color: #E9F1F7;
     }
+}
+.intro__img{
+    max-width: 38%;
+    margin-top: -162px;
+    opacity: 70%;
 }
