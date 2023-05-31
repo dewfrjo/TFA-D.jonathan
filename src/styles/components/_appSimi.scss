@@ -23,10 +23,6 @@
 .menu--deroulant{
     content: '>';
     display: inline-block;
-    &__1{
-        grid-column: 1, 5;
-    }
-
     &__2{
         left: 300px;
     }
