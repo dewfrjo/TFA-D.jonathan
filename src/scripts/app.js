@@ -1,12 +1,12 @@
 "use strict"
 
-// const menuBurger = document.querySelector('.menu__burger');
-// const menue = document.querySelector('.menu');
-// if(menuBurger){
-//     menuBurger.addEventListener('click', function(){
-//         menue.classList.toggle('menu--open');
-//     })
-// }
+const menuBurger = document.querySelector('.menu__burger');
+const menue = document.querySelector('.menu');
+if(menuBurger){
+    menuBurger.addEventListener('click', function(){
+        menue.classList.toggle('menu--open');
+    })
+}
 
 window.onscroll = function() {
     stickyMenu();
