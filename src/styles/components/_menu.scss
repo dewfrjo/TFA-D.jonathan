@@ -1,56 +1,65 @@
 header{
-    .logo{
-        width: 45px;
-        margin: 25px 0 0 40px;
-    }
-    h1{
-        font-family: 'Varela Round', sans-serif;
-        max-inline-size: 4ch;
-        font-size: 113px;
-        position: relative;
-        left: 60px;
-    }
-    .image-acc{
-        max-width: 60%;
-        display: flex;
-        margin-left: auto;
-        margin-top: -520px;
-    }
+    height: 100%;
+    background-color: #1F2324;
+}
+.fond-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 1;
+    background-color: #1F2324;
+}
+.logo{
+    width: 45px;
+    margin: 25px 0 0 40px;
+    position: fixed;
+    z-index: 1;
+}
+h1{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 40px;
+    position: fixed;
+    left: 140px;
+    top: 22px;
+    z-index: 1;
+    color: #E9F1F7;
 }
 .menu{
-    width: 60%;
-    z-index: 1;
-    margin-left: auto;
+    top: 0;
+    width: 100%;
     &__list{
-        background-color: #FFC800;
         height: 80px;
         list-style: none;
         display: flex;
         justify-content: space-around;
         align-items: center;
         padding: 0;
+        position: fixed;
     }
 }
 .menu__el a{
-    color: #3D6B74;
+    color: #E9F1F7;
     text-decoration: none;
 }
 .sticky-menu{
     position: sticky;
     z-index: 1;
     &__list{
-        background-color: #FFC800;
         width: 60%;
         height: 80px;
         list-style: none;
     }
        & ul{
         list-style: none;
-        margin: 0;
+        margin-left: 30%;
         overflow: hidden;
+        width: 70%;
+        color: #E9F1F7;
     }
     .menu__el a{
-        color: #3D6B74;
+        color: #E9F1F7;
     }
     a:hover,
     a:focus{
@@ -72,25 +81,13 @@ header{
 }
 
 .intro{
-    margin-top: 162px;
-    &__titre{
-        margin-top: -539px;
-        margin-left: 40%;
-    }
+    padding-top: 200px;
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: 80px;
     &__text{
-        display: flex;
-        max-width: 740px;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 40%;
         margin-top: 33px;
-        color: #E9F1F7;
     }
-}
-.intro__img{
-    max-width: 38%;
-    margin-top: -162px;
-    opacity: 70%;
 }
 @media (min-width: 1001px){
     .menu__burger{

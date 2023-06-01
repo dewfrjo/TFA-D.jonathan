@@ -1,9 +1,10 @@
 .why{
-    max-width: 600px;
+    max-width: 740px;
+    min-width: 55ch;
     display: flex;
     flex-direction: column;
-    margin-left: 51%;
     margin-top: 126px;
+    margin-left: 80px;
     &__text{
         margin-top: 33px;
         color: #E9F1F7;
