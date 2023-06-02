@@ -1,156 +1,225 @@
-*, ::backdrop {
-  margin: 0;
+header {
+  height: 100%;
+  background-color: #1F2324;
 }
 
-body {
-  background-color: #3D6B74;
-  font-family: "Varela", sans-serif;
-  font-size: 20px;
+.fond-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  z-index: 1;
+  background-color: #1F2324;
 }
 
-h2 {
-  font-family: "Abhaya Libre", serif;
-  font-size: 57px;
-  font-weight: bold;
+.logo {
+  width: 45px;
+  margin: 25px 0 0 40px;
+  position: fixed;
+  z-index: 1;
+}
+
+h1 {
+  font-family: "Varela Round", sans-serif;
+  font-size: 40px;
+  position: fixed;
+  left: 140px;
+  top: 22px;
+  z-index: 1;
   color: #E9F1F7;
 }
 
-h3 {
-  font-family: "Abhaya Libre", serif;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-p {
-  line-height: 28px;
-}
-
-header .logo {
-  width: 45px;
-  margin: 25px 0 0 40px;
-}
-header h1 {
-  font-family: "Varela Round", sans-serif;
-  max-inline-size: 4ch;
-  font-size: 113px;
-  position: relative;
-  left: 60px;
-}
-
 .menu {
-  width: 815px;
-  position: absolute;
-  right: -40px;
-  background-color: #FFC800;
-  padding-right: 40px;
-  top: -148px;
-  z-index: 1;
+  top: 0;
+  width: 100%;
 }
 .menu__list {
   height: 80px;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding: 0;
+  position: fixed;
 }
 
 .menu__el a {
-  color: #3D6B74;
+  color: #E9F1F7;
   text-decoration: none;
 }
 
-#sticky-menu {
+.sticky-menu {
   position: sticky;
-  top: 0;
-  float: right;
-  right: 0;
+  z-index: 1;
 }
-#sticky-menu ul {
+.sticky-menu__list {
+  width: 60%;
+  height: 80px;
   list-style: none;
-  margin: 0;
+}
+.sticky-menu ul {
+  list-style: none;
+  margin-left: 30%;
   overflow: hidden;
+  width: 70%;
+  color: #E9F1F7;
 }
-#sticky-menu .menu__el a {
-  color: #3D6B74;
+.sticky-menu .menu__el a {
+  color: #E9F1F7;
 }
-#sticky-menu a:hover,
-#sticky-menu a:focus {
+.sticky-menu a:hover,
+.sticky-menu a:focus {
   color: red;
 }
-#sticky-menu a.active {
+.sticky-menu a:active {
   text-decoration: underline;
 }
 
 .sticky {
+  top: 0;
+  right: 0;
   width: 100%;
-  padding-right: 18px;
-  justify-content: space-around;
 }
 
 .content {
-  height: 500vh;
+  height: 100%;
 }
 
 .intro {
-  position: absolute;
-  top: 600px;
+  padding-top: 200px;
   max-width: 740px;
-  right: 80px;
+  margin-left: auto;
+  margin-right: 80px;
 }
 .intro__text {
   margin-top: 33px;
-  color: #E9F1F7;
+}
+.intro--img {
+  max-width: 715px;
+  position: absolute;
+  left: -240px;
+  z-index: -1;
+}
+.intro--btn {
+  width: 257px;
+  height: 72px;
+  border-style: solid;
+  border-radius: 25px;
+  margin-top: 100px;
+  color: black;
+  background-color: #FFC800;
+  font-size: 28px;
+  font-family: "Varela Round";
 }
 
-.why {
+.trace {
   position: absolute;
-  top: 1073px;
-  max-width: 600px;
-  right: 150px;
-}
-.why__text {
-  margin-top: 33px;
-  color: #E9F1F7;
-}
-.why__text2 {
-  color: #E9F1F7;
-  margin-top: 17px;
+  width: 773px;
+  height: 657px;
+  left: -415px;
+  top: 398px;
+  rotate: 180deg;
+  z-index: -1;
 }
 
-.why-2 {
-  position: absolute;
-  top: 1363px;
-  max-width: 530px;
-  right: 80px;
+@media (min-width: 1001px) {
+  .menu__burger {
+    display: none;
+  }
 }
-
-.interview {
-  position: absolute;
-  top: 1725px;
-  margin-left: 80px;
+@media (max-width: 1000px) {
+  .menu__burger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    cursor: pointer;
+    background-image: url(../../assets/images/menu.svg);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+  }
+  .menu__liste {
+    position: fixed;
+    background-color: indianred;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.6) translateY(-20%) rotate(180de);
+    opacity: 1;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .menu--open .menu__liste {
+    /* left: 0; a ne pas faire*/
+    transform: translateX(-100%);
+  }
+  .menu__el {
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 0.5s 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .menu--open .menu__el {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .menu--open .menu__el:nth-child(2) {
+    transition-delay: 0.7s;
+  }
+  .menu--open .menu__el:nth-child(3) {
+    transition-delay: 0.9s;
+  }
+  .menu--open .menu__el:nth-child(4) {
+    transition-delay: 1.1s;
+  }
+  .menu--open .menu__el:nth-child(5) {
+    transition-delay: 1.3s;
+  }
 }
-.interview__text {
-  margin-top: 33px;
-  max-width: 740px;
-  font-size: 14px;
+.app-simi {
+  margin-top: 150px;
+  display: flex;
 }
 
 .concu {
-  position: absolute;
-  top: 2310px;
-  margin-left: 1.5em;
-  color: black;
+  grid-column: 1/6;
+  grid-row: 1;
+  margin-left: 40px;
 }
 .concu__text {
   display: flex;
   justify-content: space-between;
+  grid-column: 1/6;
+  grid-row: 2;
+  align-self: center;
+}
+
+.grid-concu {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 100px);
+  gap: 10px;
+  margin: 40px;
+}
+
+.concu-simi {
+  grid-column: 2/5;
+  grid-row: 5;
 }
 
 .menu--deroulant {
   content: ">";
-  display: inline-block;
   position: absolute;
-  top: 2485px;
+  display: inline-block;
+}
+.menu--deroulant__1 {
+  grid-column: 3;
+  grid-row: 2;
 }
 .menu--deroulant__2 {
   left: 300px;
@@ -197,9 +266,69 @@ header h1 {
 }
 
 .sous-menu {
-  max-width: 170px;
+  max-width: 250px;
   text-align: left;
   overflow: hidden;
   max-height: 0;
   font-size: 14px;
+}
+
+.interview {
+  max-width: 740px;
+  min-width: 55ch;
+  margin-left: auto;
+  margin-top: 150px;
+  margin-right: 80px;
+}
+.interview__text {
+  margin-top: 33px;
+  max-width: 740px;
+  font-size: 14px;
+  min-width: 55ch;
+}
+
+.why {
+  max-width: 740px;
+  min-width: 55ch;
+  display: flex;
+  flex-direction: column;
+  margin-top: 300px;
+  margin-left: 80px;
+}
+.why__text {
+  margin-top: 33px;
+  color: #E9F1F7;
+}
+.why__text2 {
+  color: #E9F1F7;
+  margin-top: 17px;
+}
+
+*, ::backdrop {
+  margin: 0;
+}
+
+body {
+  background-color: #1F2324;
+  font-family: "Varela", sans-serif;
+  font-size: 20px;
+}
+
+h2 {
+  font-family: "Abhaya Libre", serif;
+  font-size: 57px;
+  font-weight: bold;
+  color: white;
+}
+
+h3 {
+  font-family: "Abhaya Libre", serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+p {
+  line-height: 30px;
+  color: white;
 }/*# sourceMappingURL=app.css.map */

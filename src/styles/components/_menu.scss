@@ -88,6 +88,32 @@ h1{
     &__text{
         margin-top: 33px;
     }
+    &--img{
+        max-width: 715px;
+        position: absolute;
+        left: -240px;
+        z-index: -1;
+    }
+    &--btn{
+    width: 257px;
+    height: 72px;
+    border-style: solid;
+    border-radius: 25px;
+    margin-top: 100px;
+    color: black;
+    background-color: #FFC800;
+    font-size: 28px;
+    font-family: 'Varela Round';
+    }
+}
+.trace{
+    position: absolute;
+    width: 773px;
+    height: 657px;
+    left: -415px;
+    top: 398px;
+    rotate: 180deg;
+    z-index: -1;
 }
 @media (min-width: 1001px){
     .menu__burger{
