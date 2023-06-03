@@ -61,13 +61,13 @@ h1{
     .menu__el a{
         color: #E9F1F7;
     }
-    a:hover,
-    a:focus{
-        color: red;
-    }
     a:active {
         text-decoration: underline;
       }
+    a:hover,
+    a:focus{
+        color: red;
+    } 
 } 
 
 .sticky {
@@ -95,15 +95,24 @@ h1{
         z-index: -1;
     }
     &--btn{
-    width: 257px;
-    height: 72px;
-    border-style: solid;
-    border-radius: 25px;
-    margin-top: 100px;
-    color: black;
-    background-color: #FFC800;
-    font-size: 28px;
-    font-family: 'Varela Round';
+        width: 257px;
+        height: 72px;
+        border-style: solid;
+        border-radius: 25px;
+        margin-top: 50px;
+        color: black;
+        background-color: #FFC800;
+        font-size: 28px;
+        font-family: 'Varela Round';
+    }
+    &--btn a{
+        text-decoration: none;
+        color: #1F2324;
+        display: flex;
+        width: 239px;
+        height: 63px;
+        align-items: center;
+        justify-content: center;
     }
 }
 .trace{
