@@ -1,15 +1,26 @@
 .why{
-    max-width: 740px;
+    max-width: 100%;
     min-width: 55ch;
     display: flex;
     flex-direction: column;
-    margin-top: 300px;
+    margin-top: 150px;
     margin-left: 80px;
+    position: relative;
+    overflow: hidden;
+    &--title{
+        padding-top: 150px;
+    }
+    &--img{
+        position: absolute;
+        right: -150px;
+    }
     &__text{
+        max-width: 740px;
         margin-top: 33px;
         color: #E9F1F7;
     }
     &__text2{
+        max-width: 740px;
         color: #E9F1F7;
         margin-top: 17px;
     }
