@@ -3,6 +3,8 @@
     display: flex;
     flex-direction: column;
     background-color: black;
+    position: relative;
+    overflow: hidden;
 }
 .concu{
     margin-left: 40px;
@@ -81,4 +83,10 @@
     overflow: hidden;
     max-height: 0;
     font-size: 14px;
+}
+.trace-white{
+    position: absolute;
+    right: 0;
+    rotate: 180deg;
+    bottom: -160px;
 }

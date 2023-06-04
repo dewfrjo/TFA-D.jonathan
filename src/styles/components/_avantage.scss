@@ -1,0 +1,27 @@
+.avantage{
+    background-color: white;
+    background-image: url(../../assets/images/fond-relief.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    
+    &__fond{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    &__title{
+        padding-top: 100px;
+        color: black;
+        margin: 0 80px;
+    }
+    &-grid{
+        margin: 0 80px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: repeat(3, 300px) ;
+    }
+}
+.av{
+    color: black;
+}
