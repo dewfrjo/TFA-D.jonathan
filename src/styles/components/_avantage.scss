@@ -3,7 +3,9 @@
     background-image: url(../../assets/images/fond-relief.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
+    position: relative;
+    overflow: hidden;
     
     &__fond{
         position: absolute;
@@ -13,15 +15,28 @@
     &__title{
         padding-top: 100px;
         color: black;
-        margin: 0 80px;
+        margin: 0 80px 100px;
     }
     &-grid{
         margin: 0 80px;
         display: grid;
         grid-template-columns: repeat(2, 1fr) ;
-        grid-template-rows: repeat(3, 300px) ;
+        grid-template-rows: auto;
+        gap: 33px;
     }
 }
 .av{
     color: black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 33px;
+    max-width: 500px;
+}
+.box-avantage{
+    justify-self: center;
+}
+.trace-droite{
+    position: absolute;
+    width: 1064px;
+    bottom: -34px;
 }

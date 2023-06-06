@@ -1,5 +1,6 @@
 .app-simi{
-    margin-top: 100px;  
+    margin-top: 100px; 
+    padding-bottom: 100px; 
     display: flex;
     flex-direction: column;
     background-color: black;
@@ -7,82 +8,70 @@
     overflow: hidden;
 }
 .concu{
-    margin-left: 40px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    &__text{
+    margin: 100px 80px;
+    &--titre{
+        margin-top: 50px;
+        margin-bottom: 15px;
         display: flex;
-        flex-wrap: wrap;
-        align-content: center;
+        justify-content: center;
+    }
+    &__text{
+        width: 500px;
+        height: 225px;
+        overflow: auto;
+        padding: 33px;
+    }
+    &__ensemble{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        margin: 0 80px;
+        gap: 10px;
+        row-gap: 33px;
+    }
+    &__waze{
+        background-image: url(../../assets/images/waze.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 20px;
+    }
+    &__google{
+        background-image: url(../../assets/images/google-maps.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 20px;
+    }
+    &__coyote{
+        background-image: url(../../assets/images/coyote.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 20px;
+    }
+    &__mappy{
+        background-image: url(../../assets/images/mappy.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 20px;
+    }
+    &__michelin{
+        grid-column: 1 / 3;
+        background-image: url(../../assets/images/via-michelin.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 20px;
     }
     &-simi{
         max-width: 740px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
+        min-width: 55ch;
         padding-top: 100px;
-        padding-bottom: 100px;
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
     }
-}
-.menu--deroulant{
-    content: '>';
-    // position: absolute;
-    // display: inline-block;
-    display: flex;
-    padding: 20px;
 
-    &__2{
-        left: 300px;
-    }
-    &__3{
-        left: 600px;
-    }
-    &__4{
-        left: 800px;
-    }
-    &__5{
-        left: 1000px;
-    }
 }
-.menu--deroulant > :after{
-    content: '>';
-    margin-left: 7px;
-    display: inline-block;
-}
-@keyframes rotationFleche {
-
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(90deg);
-    }
-}
-.menu--deroulant:hover > :after{
-    animation: rotationFleche 0.2s linear forwards;
-}
-@keyframes apparitionSousmenu {
-    0%{
-        border-top: 3 px solid #d00000;
-    }
-    30%{
-    }
-    100%{
-        max-height: 50em;
-        border-top: 3px solid #d00000;
-    }
-}
-.menu--deroulant:hover > .sous-menu {
-    animation: apparitionSousmenu 1s forwards;
-}
-
-.sous-menu {
-    max-width: 250px;
-    text-align: left;
-    overflow: hidden;
-    max-height: 0;
-    font-size: 14px;
+.box{
+    justify-self: center;
 }
 .trace-white{
     position: absolute;
