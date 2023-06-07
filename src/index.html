@@ -48,8 +48,22 @@
 
     <section class="intro">
       <!-- changer pour les opti -->
-      <img class="intro--img" src="assets/images/img-avantage-fleche.png" alt="">
-      <img class="trace" src="assets/images/trace-moto.png" alt="">
+      <picture>
+        <source media="(min-width: 1281px)" 
+                srcset="assets/images/img-avantage-fleche.png">
+        <source media="(min-width: 820)" 
+                srcset="assets/images/img-fleche-medium.png">
+        <source media="(max-width: 819px)" 
+                srcset="assets/images/img-fleche-petit.png">
+        <img class="intro--img" src="assets/images/img-avantage-fleche.png" srcset="assets/images/img-avantage-fleche@2x.png 2x" alt="Photo d'un motard sur la route dans une courbe, le tout mis dans une forme de flèche">
+      </picture>
+      <picture>
+        <source media="(min-width: 1281px)"
+                srcset="assets/images/trace-moto.png"> 
+        <source media="(min-width: 820)" 
+                srcset="assets/images/trace-moto-medium.png">
+        <img class="trace" src="assets/images/trace-moto.png" srcset="assets/images/trace-moto@2x.png" alt="trace de pneu de moto de couleur noir">
+      </picture>
       <h2 class="intro__titre">Rouler en toute sécurité avec Moto Safely</h2>
 
       <p class="intro__text">C’est une application qui va permettre de répertorier l’état des routes dans nos régions 
@@ -63,7 +77,15 @@
     </section>
 
     <section id="pourquoi" class="why">
-      <img class="why--img" src="assets/images/photo-moto-modif.png" alt="">
+      <picture>
+        <source media="(min-width: 1281px)"
+                srcset="assets/images/photo-moto-modif.png"> 
+        <source media="(min-width: 820)" 
+                 srcset="assets/images/photo-moto-modif-medium.png">
+        <source media="(max-width: 819px)" 
+                 srcset="assets/images/photo-moto-modif-petit.png">
+        <img class="why--img" src="assets/images/photo-moto-modif.png" alt="pilote moto dans un virage et la photo est sous forme de parallélogramme placé sur la droite de l'écran">
+      </picture>
 
       <h2 class="why--title">Pourquoi ce sujet&nbsp;?</h2>
 
@@ -77,7 +99,7 @@
     </section>
 
     <section class="interview">
-      <img class="inter--img" src="assets/images/petit-relief.svg" alt="">
+      <img class="inter--img" src="assets/images/petit-relief.svg" alt="relief en 2d mis en fond a gauche de l'écran">
       <h3>Ce qui est ressorti des interviews</h3>
 
       <p class="interview__text">L’enquête a mis en évidence une réelle insécurité sur les routes pour les motards, 
@@ -139,7 +161,7 @@
         mais pas réellement des dangers qu’on pourrait y rencontrer (et elles sont toutes les deux payantes).
       </p>
 
-      <img class="trace-white" src="assets/images/trace-moto-white.png" alt="">
+      <img class="trace-white" src="assets/images/trace-moto-white.png" alt="trace de pneu de moto de couleur blanche">
     </section>
 
     <section id="avantages" class="avantage">
@@ -191,11 +213,11 @@
         
       </div>
 
-      <img class="trace-droite" src="assets/images/trace-moto-2.svg" alt="">
+      <img class="trace-droite" src="assets/images/trace-moto-2.svg" alt="trace de pneu de moto droite qui sépare les deux parties">
     </section>
 
     <section class="bm">
-      <img class="img-bm" src="assets/images/moto-deco-fond-of.png" alt="">
+      <img class="img-bm" src="assets/images/moto-deco-fond-of.png" alt="BMW S1000RR placé a droite de l'écran qui sépare les deux parties">
     </section>
 
     <section id="limite-et-defis" class="limite">

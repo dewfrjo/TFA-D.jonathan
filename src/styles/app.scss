@@ -30,3 +30,18 @@ p{
     line-height: 30px;
     color: white;
 }
+
+@media (max-width: 1280px) {
+    body{
+        font-size: 16px;
+    }
+    h2{
+        font-size: 45px;
+    }
+    h3{
+        font-size: 32px;
+    }
+    p{
+        line-height: 26px;
+    }
+}

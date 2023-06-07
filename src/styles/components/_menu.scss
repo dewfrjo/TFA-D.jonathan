@@ -125,12 +125,49 @@ h1{
     rotate: 180deg;
     z-index: -1;
 }
-@media (min-width: 1001px){
+@media (max-width: 1280px){
+    .fond-header{
+        height: 6%;
+    }
+    .logo{
+        width: 38px;
+        margin: 15px 0 0 30px;
+    }
+    h1{
+        font-size: 25px;
+        left: 83px;
+    }
+    .intro{
+        padding-top: 150px;
+        max-width: 480px;
+        margin-right: 40px;
+        &--img{
+            max-width: 525px;
+            left: -240px;
+        }
+        &--btn{
+            width: 227px;
+            height: 63px;
+            font-size: 18px;
+        }
+        &--btn a{
+            width: 211px;
+            height: 53px;
+        }
+    }
+    .trace{
+        width: 772px;
+        height: 414px;
+        left: -558px;
+        rotate: 180deg;
+    }
+}
+@media (min-width: 820px){
     .menu__burger{
         display: none;
     }
 }
-@media (max-width: 1000px){
+@media (max-width: 819px){
 
     .menu__burger{
         position: fixed;
