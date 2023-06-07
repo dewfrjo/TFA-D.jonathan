@@ -18,3 +18,14 @@
     rotate: 310deg;
     opacity: 40%;
 }
+
+@media (max-width: 1100px){
+    .interview{
+        max-width: 480px;
+        margin-right: 40px;
+    }
+    .inter--img{
+        width: 400px;
+        margin-top: 150px;
+    }
+}

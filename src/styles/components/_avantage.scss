@@ -40,3 +40,19 @@
     width: 1064px;
     bottom: -34px;
 }
+
+@media (max-width: 1100px){
+    .avantage{
+        padding-bottom: 150px;
+        
+        &__title{
+            margin: 0 40px 100px;
+        }
+        &-grid{
+            margin: 0 40px;
+        }
+    }
+    .a4{
+        text-align: center;
+    }
+}
