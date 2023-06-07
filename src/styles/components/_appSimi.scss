@@ -79,7 +79,26 @@
     rotate: 180deg;
     bottom: -160px;
 }
+.numbertext{
+    display: none;
+}
+.mySlides{
+    justify-self: center;
+}
+.fade{
+    justify-self: center;
+}
 
+
+@media (max-width: 1320px){
+    .concu__text{
+        width: 370px;
+        height: 188px;
+    }
+    .trace-white{
+        bottom: -182px;
+    }
+}
 @media (max-width: 1100px){
     .concu{
         margin: 100px 40px;
@@ -97,14 +116,5 @@
     }
     .trace-white{
         width: 450px;
-    }
-}
-@media (max-width: 1320px){
-    .concu__text{
-        width: 370px;
-        height: 188px;
-    }
-    .trace-white{
-        bottom: -182px;
     }
 }
