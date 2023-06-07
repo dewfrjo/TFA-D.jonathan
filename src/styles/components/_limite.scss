@@ -121,3 +121,12 @@
         }
     }
 }
+@media (max-width: 1320px){
+    .pilote{
+        left: -225px;
+
+        &__marque{
+            left: -330px;
+        }
+    }
+}

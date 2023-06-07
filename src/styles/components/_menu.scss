@@ -162,6 +162,13 @@ h1{
         rotate: 180deg;
     }
 }
+@media (max-width: 1320px){
+    .intro--img{
+        width: 600px;
+        left: -300px;
+    }
+}
+
 @media (min-width: 820px){
     .menu__burger{
         display: none;
