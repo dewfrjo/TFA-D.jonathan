@@ -169,6 +169,33 @@ h1{
     }
 }
 
+@media (max-width: 819px) {
+    .menu{
+        top: 0;
+        width: 100%;
+        &__list{
+            height: 238px;
+            flex-direction: column;
+        }
+    }
+    .sticky-menu{
+        position: sticky;
+        z-index: 1;
+        &__list{
+            width: 60%;
+            height: 80px;
+            list-style: none;
+        }
+           & ul{
+            list-style: none;
+            margin-left: 30%;
+            overflow: hidden;
+            width: 70%;
+            color: #E9F1F7;
+        }
+    }
+}
+
 @media (min-width: 820px){
     .menu__burger{
         display: none;

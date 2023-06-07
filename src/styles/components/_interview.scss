@@ -29,5 +29,18 @@
         margin-top: 150px;
     }
 }
-@media (max-width: 1320px){
+@media (max-width: 820px) {
+    .interview{
+        max-width: 480px;
+        min-width: 0;
+        &__text{
+            max-width: 310px;
+            font-size: 10px;
+            min-width: 0;
+        }
+    }
+    .inter--img{
+        width: 400px;
+        margin-top: 150px;
+    }
 }
