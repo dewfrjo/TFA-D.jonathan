@@ -100,6 +100,7 @@ h1{
         height: 72px;
         border-style: solid;
         border-radius: 25px;
+        border-color: #1F2324;
         margin-top: 50px;
         color: black;
         background-color: #FFC800;
@@ -170,33 +171,6 @@ h1{
     }
 }
 
-@media (max-width: 819px) {
-    .menu{
-        top: 0;
-        width: 100%;
-        &__list{
-            height: 238px;
-            flex-direction: column;
-        }
-    }
-    .sticky-menu{
-        position: sticky;
-        z-index: 1;
-        &__list{
-            width: 60%;
-            height: 80px;
-            list-style: none;
-        }
-           & ul{
-            list-style: none;
-            margin-left: 30%;
-            overflow: hidden;
-            width: 70%;
-            color: #E9F1F7;
-        }
-    }
-}
-
 @media (min-width: 820px){
     .menu__burger{
         display: none;
@@ -206,14 +180,14 @@ h1{
 
     .menu__burger{
         position: fixed;
-        top: 20px;
-        right: 20px;
+        top: 7px;
+        right: 37px;
         z-index: 100;
         cursor: pointer;
         background-image: url(../../assets/images/menu.svg);
         background-repeat: no-repeat;
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
         background-color: transparent;
         border: none;
     }
@@ -262,5 +236,70 @@ h1{
     
     .menu--open .menu__el:nth-child(5){
         transition-delay: 1.3s;
+    }
+}
+@media (max-width: 819px) {
+    .logo {
+        width: 30px;
+        margin: 10px 0 0 30px;
+    }
+    h1{
+        font-size: 25px;
+        left: 83px;
+        top: 10px;
+    }
+    .menu{
+        top: 0;
+        width: 100%;
+        &__list{
+            height: 238px;
+            flex-direction: column;
+        }
+    }
+    .sticky-menu{
+        position: sticky;
+        z-index: 1;
+        &__list{
+            width: 60%;
+            height: 80px;
+            list-style: none;
+        }
+           & ul{
+            list-style: none;
+            margin-left: 30%;
+            overflow: hidden;
+            width: 70%;
+            color: #E9F1F7;
+        }
+    }
+    .intro{
+        padding-top: 150px;
+        max-width: 390px;
+        margin-right: 40px;
+        &--img {
+            max-width: 375px;
+            left: -240px;
+            top: 4px;
+        }
+        &__text{
+            max-width: 300px;
+        margin-left: 40px;
+        margin-right: 0;
+        margin-top: 50px;
+        }
+        &--btn{
+            width: 180px;
+            height: 53px;
+            margin-left: 40px;
+            font-size: 16px;
+        }
+        &--btn a{
+            width: 163px;
+            height: 45px;
+        }
+    }
+    .trace{
+        rotate: 243deg;
+        top: 297px;
     }
 }
