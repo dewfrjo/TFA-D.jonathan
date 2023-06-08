@@ -67,8 +67,18 @@
             left: auto;
             width: 100%;
         }
+        &-grid{
+            margin: 0 40px;
+            display: flex;
+            flex-direction: column;
+        }
     }
     .d1, .d2, .d3, .d4, .d5, .d6{
         display: none;
+    }
+    .togg1, .togg2, .togg3, .togg4, .togg5, .togg6{
+        border: 1px solid black;
+        padding: 7px;
+        border-radius: 12px;
     }
 }

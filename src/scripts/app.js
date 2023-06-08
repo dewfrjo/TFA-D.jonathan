@@ -69,6 +69,54 @@ togg6.addEventListener("click", () => {
     }
 })
 
+// pour la partie lim
+
+let toggl1 = document.querySelector('.toggl1');
+let toggl2 = document.querySelector('.toggl2');
+let toggl3 = document.querySelector('.toggl3');
+let toggl4 = document.querySelector('.toggl4');
+let toggl5 = document.querySelector('.toggl5');
+let l1 = document.querySelector('.l1');
+let l2 = document.querySelector('.l2');
+let l3 = document.querySelector('.l3');
+let l4 = document.querySelector('.l4');
+let l5 = document.querySelector('.l5');
+toggl1.addEventListener("click", () => {
+    if(getComputedStyle(l1).display != "none"){
+        l1.style.display = "none";
+    }else{
+        l1.style.display = "block";
+    }
+})
+
+toggl2.addEventListener("click", () => {
+    if(getComputedStyle(l2).display != "none"){
+        l2.style.display = "none";
+    }else{
+        l2.style.display = "block";
+    }
+})
+toggl3.addEventListener("click", () => {
+    if(getComputedStyle(l3).display != "none"){
+        l3.style.display = "none";
+    }else{
+        l3.style.display = "block";
+    }
+})
+toggl4.addEventListener("click", () => {
+    if(getComputedStyle(l4).display != "none"){
+        l4.style.display = "none";
+    }else{
+        l4.style.display = "block";
+    }
+})
+toggl5.addEventListener("click", () => {
+    if(getComputedStyle(l5).display != "none"){
+        l5.style.display = "none";
+    }else{
+        l5.style.display = "block";
+    }
+})
 // window.onscroll = function() {
 //     stickyMenu();
 //   };

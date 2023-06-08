@@ -132,5 +132,52 @@
 }
 
 @media (max-width: 819px) {
-    
+    .limite{
+        &__title{
+            left: auto;
+        }
+        &-grid{
+            margin: 0 40px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .l1, .l2, .l3, .l4, .l5{
+        display: none;
+    }
+    .toggl1, .toggl2, .toggl3, .toggl4, .toggl5{
+        border: 1px solid white;
+        padding: 7px;
+        border-radius: 12px;
+    }
+    .forme {
+        right: -184px;
+        max-width: 266px;
+        top: 62%;
+    }
+    .resume {
+        max-width: 376px;
+        min-width: 0;
+        margin-left: 40px;
+        margin-top: 50px;
+        margin-right: 40px;
+    }
+    .resume__2 {
+        max-width: 376px;
+        min-width: 0;
+        margin-left: 40px;
+        margin-top: 50px;
+        margin-right: 40px;
+    }
+    .pilote{
+        display: none;
+    }
+    .pilote__marque {
+        height: 300px;
+        left: -350px;
+        bottom: -35px;
+        rotate: 198deg;
+        z-index: -1;
+        opacity: 10%;
+    }
 }
