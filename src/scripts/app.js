@@ -1,12 +1,37 @@
 "use strict"
 
+// const menuBurger = document.querySelector('.menu__burger');
+// const menue = document.querySelector('.menu');
+// if(menuBurger){
+//     menuBurger.addEventListener('click', function(){
+//         menue.classList.toggle('menu--open');
+//         document.body.classList.toggle('menu-open');
+//     })
+// }
+
 const menuBurger = document.querySelector('.menu__burger');
 const menue = document.querySelector('.menu');
-if(menuBurger){
-    menuBurger.addEventListener('click', function(){
-        menue.classList.toggle('menu--open');
-    })
+const menuLinks = document.querySelectorAll('.menu__el a'); // Sélectionnez tous les liens du menu
+
+function toggleMenu() {
+  menue.classList.toggle('menu--open');
+  document.body.classList.toggle('menu-open');
 }
+
+if (menuBurger) {
+  menuBurger.addEventListener('click', toggleMenu);
+}
+// Fermer le menu en cliquant en dehors du menu ou sur un lien de navigation
+document.addEventListener('click', function(event) {
+  const target = event.target;
+  const isMenuOpen = menue.classList.contains('menu--open');
+  const isTargetInsideMenu = menue.contains(target);
+  
+  if (isMenuOpen && !isTargetInsideMenu) {
+    toggleMenu();
+  }
+});
+  
 
 
 // pour faire apparaitre ou disparaitre les el d de la partie avantage
