@@ -110,7 +110,7 @@
     }
 }
 
-@media (max-width: 819px) {
+@media (max-width: 600px) {
     .concu{
         left: auto;
         &__ensemble{
@@ -128,7 +128,7 @@
             width: 232px;
             height: 89px;
             padding: 35px;
-            margin-right: 0;
+            margin: 0 auto;
         }
         &-simi{
             max-width: 344px;

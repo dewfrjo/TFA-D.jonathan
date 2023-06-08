@@ -297,6 +297,20 @@ h1{
         }
     }
     .intro{
+        &--img {
+            max-width: 478px;
+            left: -240px;
+            top: 94px;
+            opacity: 40%;
+        }
+    .trace{
+        rotate: 243deg;
+        top: 297px;
+    }
+    }
+}
+@media (max-width: 600px) {
+    .intro{
         padding-top: 150px;
         max-width: 390px;
         margin-right: 40px;
@@ -321,9 +335,5 @@ h1{
             width: 163px;
             height: 45px;
         }
-    }
-    .trace{
-        rotate: 243deg;
-        top: 297px;
     }
 }
