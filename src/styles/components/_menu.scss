@@ -243,6 +243,9 @@ h1{
         width: 30px;
         margin: 10px 0 0 30px;
     }
+    .fond-header{
+        height: 50px;
+    }
     h1{
         font-size: 25px;
         left: 83px;
@@ -283,9 +286,9 @@ h1{
         }
         &__text{
             max-width: 300px;
-        margin-left: 40px;
-        margin-right: 0;
-        margin-top: 50px;
+            margin-left: 40px;
+            margin-right: 0;
+            margin-top: 50px;
         }
         &--btn{
             width: 180px;
