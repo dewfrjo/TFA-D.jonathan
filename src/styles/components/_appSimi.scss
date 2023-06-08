@@ -111,5 +111,29 @@
 }
 
 @media (max-width: 819px) {
-    
+    .concu{
+        left: auto;
+        &__ensemble{
+            margin: 0 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        &--titre{
+            margin-top: 40px;
+            margin-bottom: 0px;
+            display: flex;
+            justify-content: center;
+        }
+        &__text {
+            width: 232px;
+            height: 89px;
+            padding: 35px;
+            margin-right: 0;
+        }
+        &-simi{
+            max-width: 344px;
+            min-width: 0;
+            text-align: start;
+        }
+    }
 }
