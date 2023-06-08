@@ -289,6 +289,18 @@ h1 {
     margin-left: auto;
     right: 40px;
   }
+  .intro--img {
+    max-width: 478px;
+    left: -240px;
+    top: 94px;
+    opacity: 40%;
+  }
+  .intro .trace {
+    rotate: 243deg;
+    top: 297px;
+  }
+}
+@media (max-width: 600px) {
   .intro {
     padding-top: 150px;
     max-width: 390px;
@@ -314,10 +326,6 @@ h1 {
   .intro--btn a {
     width: 163px;
     height: 45px;
-  }
-  .trace {
-    rotate: 243deg;
-    top: 297px;
   }
 }
 .app-simi {
@@ -431,7 +439,7 @@ h1 {
     width: 450px;
   }
 }
-@media (max-width: 819px) {
+@media (max-width: 600px) {
   .concu {
     left: auto;
   }
@@ -450,7 +458,7 @@ h1 {
     width: 232px;
     height: 89px;
     padding: 35px;
-    margin-right: 0;
+    margin: 0 auto;
   }
   .concu-simi {
     max-width: 344px;
@@ -490,7 +498,7 @@ h1 {
     margin-top: 150px;
   }
 }
-@media (max-width: 819px) {
+@media (max-width: 600px) {
   .interview {
     max-width: 480px;
     min-width: 0;
@@ -553,7 +561,7 @@ h1 {
     width: 420px;
   }
 }
-@media (max-width: 819px) {
+@media (max-width: 600px) {
   .why {
     max-width: 100%;
     min-width: 0;
@@ -648,7 +656,7 @@ h1 {
     text-align: center;
   }
 }
-@media (max-width: 819px) {
+@media (max-width: 600px) {
   .avantage__title {
     left: auto;
     width: 100%;
@@ -802,6 +810,19 @@ h1 {
   }
 }
 @media (max-width: 819px) {
+  .pilote {
+    display: none;
+  }
+  .pilote__marque {
+    height: 300px;
+    left: -350px;
+    bottom: -35px;
+    rotate: 198deg;
+    z-index: -1;
+    opacity: 10%;
+  }
+}
+@media (max-width: 600px) {
   .limite__title {
     left: auto;
   }
@@ -871,7 +892,7 @@ h1 {
     width: 400px;
   }
 }
-@media (max-width: 819px) {
+@media (max-width: 600px) {
   .img-bm {
     top: -30px;
     width: 350px;
@@ -920,7 +941,7 @@ p {
     line-height: 26px;
   }
 }
-@media (max-width: 819px) {
+@media (max-width: 600px) {
   body {
     font-size: 14px;
   }
