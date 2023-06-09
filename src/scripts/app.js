@@ -21,55 +21,6 @@ document.addEventListener('click', function(event) {
     toggleMenu();
   }
 });
-  
-// let sections = document.querySelectorAll('.menu__list');
-// let navlinks = document.querySelectorAll('header nav ul li a');
-
-// window.onscroll = () => {
-//     sections.forEach(sec => {
-//         let top = window.scrollY;
-//         let offset = sec.offsetTop;
-//         let height = sec.offsetHeight;
-//         let id = sec.getAttribute('id');
-
-//         if (top >= offset && top < offset + height) {
-//             navlinks.forEach(link => {
-//                 link.classList.remove('Mactive');
-//             });
-//             document.querySelector('header nav ul li a[href*=' + id + ']').classList.add('Mactive');
-//         }
-//     });
-// };
-// Sélectionnez tous les éléments d'ancrage du menu
-// const navLinks = document.querySelectorAll('.menu__list a');
-
-// // Fonction pour mettre à jour la classe active du menu
-// function setActiveLink() {
-//   const scrollPosition = window.scrollY;
-
-//   // Parcourez tous les liens du menu
-//   navLinks.forEach((link) => {
-//     const section = document.querySelector(link.getAttribute('href'));
-
-//     // Vérifiez si la section est visible dans la fenêtre visible
-//     if (
-//       section.offsetTop <= scrollPosition &&
-//       section.offsetTop + section.offsetHeight > scrollPosition
-//     ) {
-//       // Supprimez la classe active de tous les liens
-//       navLinks.forEach((link) => {
-//         link.classList.remove('Mactive');
-//       });
-
-//       // Ajoutez la classe active au lien correspondant à la section visible
-//       link.classList.add('Mactive');
-//     }
-//   });
-// }
-
-// // Attachez un événement de défilement à la fenêtre et appelez la fonction setActiveLink
-// window.addEventListener('scroll', setActiveLink);
-
 
 // Sélectionnez tous les liens de votre menu
 var navLinks = document.querySelectorAll('.menu li a');
