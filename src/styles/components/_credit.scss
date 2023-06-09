@@ -1,0 +1,34 @@
+.credit{
+    height: 100%;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    line-height: 50PX;
+    text-align: center;
+    &__titre{
+        padding-bottom: 50px;
+        margin: 0;
+    }
+}
+.remer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+.thank{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.thank__p{
+    margin-right: 5px;
+}
+.thank a{
+    text-decoration: none;
+    color: #FFC800;
+}
+.thank a:hover,
+.thank a:focus{
+    color: #D00000;
+}

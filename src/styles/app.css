@@ -82,11 +82,6 @@ h1 {
   width: 100%;
 }
 
-.content {
-  height: 100%;
-  overflow: hidden;
-}
-
 .intro {
   padding-top: 200px;
   max-width: 740px;
@@ -930,10 +925,145 @@ h1 {
   color: #d00000;
 }
 
+.footerUi {
+  position: relative;
+}
+
 .font {
   padding-top: 150px;
+  margin-bottom: 100px;
   position: relative;
   overflow: hidden;
+  text-align: center;
+}
+.font__titre {
+  padding-bottom: 33px;
+}
+.font__detail {
+  line-height: 30px;
+}
+
+.color {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.color__titre {
+  padding-bottom: 33px;
+}
+
+.color--list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.color__ref {
+  margin-left: 15px;
+  margin-right: 2px;
+}
+
+.c1 {
+  background-color: #1F2324;
+  height: 50px;
+  width: 50px;
+  border: solid 1px;
+}
+
+.c2 {
+  background-color: black;
+  height: 50px;
+  width: 50px;
+}
+
+.c3 {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border: #1F2324 solid;
+}
+
+.c4 {
+  background-color: #FFC82B;
+  height: 50px;
+  width: 50px;
+}
+
+.c5 {
+  background-color: #D00000;
+  height: 50px;
+  width: 50px;
+}
+
+@media (min-width: 600px) {
+  .footerUi {
+    width: 100%;
+    bottom: 0;
+  }
+}
+@media (max-width: 600px) {
+  .color--list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .font__titre {
+    margin: 0 auto;
+    left: 0;
+    text-align: center;
+  }
+  .color {
+    margin-bottom: 100px;
+  }
+  .color__titre {
+    margin: 0 auto;
+    left: 0;
+    text-align: center;
+    width: 240px;
+  }
+  .c1 {
+    border: solid 1px;
+  }
+}
+.credit {
+  height: 100%;
+  padding-top: 100px;
+  margin-bottom: 100px;
+  line-height: 50PX;
+  text-align: center;
+}
+.credit__titre {
+  padding-bottom: 50px;
+  margin: 0;
+}
+
+.remer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+
+.thank {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.thank__p {
+  margin-right: 5px;
+}
+
+.thank a {
+  text-decoration: none;
+  color: #FFC800;
+}
+
+.thank a:hover,
+.thank a:focus {
+  color: #D00000;
 }
 
 *, ::backdrop {
