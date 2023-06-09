@@ -26,6 +26,11 @@ h1{
     z-index: 1;
     color: #E9F1F7;
 }
+h1 a{
+    text-decoration: none;
+    color: #E9F1F7;
+
+}
 .menu{
     top: 0;
     width: 100%;
@@ -61,10 +66,8 @@ h1{
     .menu__el a{
         color: #E9F1F7;
     }
-    a:active {
-        text-decoration: underline;
-      }
     a:hover,
+    a.Mactive,
     a:focus{
         color: red;
     } 

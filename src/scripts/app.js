@@ -1,14 +1,4 @@
 "use strict"
-
-// const menuBurger = document.querySelector('.menu__burger');
-// const menue = document.querySelector('.menu');
-// if(menuBurger){
-//     menuBurger.addEventListener('click', function(){
-//         menue.classList.toggle('menu--open');
-//         document.body.classList.toggle('menu-open');
-//     })
-// }
-
 const menuBurger = document.querySelector('.menu__burger');
 const menue = document.querySelector('.menu');
 const menuLinks = document.querySelectorAll('.menu__el a'); // Sélectionnez tous les liens du menu
@@ -32,6 +22,102 @@ document.addEventListener('click', function(event) {
   }
 });
   
+// let sections = document.querySelectorAll('.menu__list');
+// let navlinks = document.querySelectorAll('header nav ul li a');
+
+// window.onscroll = () => {
+//     sections.forEach(sec => {
+//         let top = window.scrollY;
+//         let offset = sec.offsetTop;
+//         let height = sec.offsetHeight;
+//         let id = sec.getAttribute('id');
+
+//         if (top >= offset && top < offset + height) {
+//             navlinks.forEach(link => {
+//                 link.classList.remove('Mactive');
+//             });
+//             document.querySelector('header nav ul li a[href*=' + id + ']').classList.add('Mactive');
+//         }
+//     });
+// };
+// Sélectionnez tous les éléments d'ancrage du menu
+// const navLinks = document.querySelectorAll('.menu__list a');
+
+// // Fonction pour mettre à jour la classe active du menu
+// function setActiveLink() {
+//   const scrollPosition = window.scrollY;
+
+//   // Parcourez tous les liens du menu
+//   navLinks.forEach((link) => {
+//     const section = document.querySelector(link.getAttribute('href'));
+
+//     // Vérifiez si la section est visible dans la fenêtre visible
+//     if (
+//       section.offsetTop <= scrollPosition &&
+//       section.offsetTop + section.offsetHeight > scrollPosition
+//     ) {
+//       // Supprimez la classe active de tous les liens
+//       navLinks.forEach((link) => {
+//         link.classList.remove('Mactive');
+//       });
+
+//       // Ajoutez la classe active au lien correspondant à la section visible
+//       link.classList.add('Mactive');
+//     }
+//   });
+// }
+
+// // Attachez un événement de défilement à la fenêtre et appelez la fonction setActiveLink
+// window.addEventListener('scroll', setActiveLink);
+
+
+// Sélectionnez tous les liens de votre menu
+var navLinks = document.querySelectorAll('.menu li a');
+
+// Parcourir les liens du menu
+navLinks.forEach(function(link) {
+  // Ajouter un écouteur d'événement de clic à chaque lien
+  link.addEventListener('click', function() {
+    // Supprimer la classe "active" de tous les liens du menu
+    navLinks.forEach(function(link) {
+      link.classList.remove('Mactive');
+    });
+
+    // Ajouter la classe "active" au lien sur lequel vous avez cliqué
+    this.classList.add('Mactive');
+  });
+});
+
+// Fonction pour mettre à jour l'état actif du menu lors du défilement
+function updateMenuState() {
+  // Récupérer la position de défilement verticale de la page
+  var scrollPosition = window.scrollY || window.pageYOffset;
+
+  // Parcourir les sections de votre page
+  document.querySelectorAll('section').forEach(function(section) {
+    // Vérifier si la section est visible dans la fenêtre
+    if (scrollPosition >= section.offsetTop && scrollPosition < section.offsetTop + section.offsetHeight) {
+      // Récupérer l'ID de la section
+      var sectionId = section.getAttribute('id');
+
+      // Parcourir les liens du menu
+      navLinks.forEach(function(link) {
+        // Supprimer la classe "active" de tous les liens du menu
+        link.classList.remove('Mactive');
+
+        // Vérifier si le lien correspond à la section actuelle
+        if (link.getAttribute('href') === '#' + sectionId) {
+          // Ajouter la classe "active" au lien correspondant
+          link.classList.add('Mactive');
+        }
+      });
+    }
+  });
+}
+
+// Ajouter un écouteur d'événement de défilement pour mettre à jour l'état du menu
+window.addEventListener('scroll', updateMenuState);
+
 
 
 // pour faire apparaitre ou disparaitre les el d de la partie avantage
@@ -142,17 +228,3 @@ toggl5.addEventListener("click", () => {
         l5.style.display = "block";
     }
 })
-// window.onscroll = function() {
-//     stickyMenu();
-//   };
-  
-//  var menu = document.querySelector(".sticky-menu");
-//  var sticky = menu.offsetTop;
-
-//  function stickyMenu() {
-//    if (window.pageYOffset >= sticky) {
-//      menu.classList.add("sticky");
-//    } else {
-//      menu.classList.remove("sticky");
-//    }
-//  }
