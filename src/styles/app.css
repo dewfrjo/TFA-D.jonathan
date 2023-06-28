@@ -664,10 +664,10 @@ h1 a {
     display: flex;
     flex-direction: column;
   }
-  .d1, .d2, .d3, .d4, .d5, .d6 {
+  .hidden {
     display: none;
   }
-  .togg1, .togg2, .togg3, .togg4, .togg5, .togg6 {
+  .togg-trigger {
     border: 1px solid black;
     padding: 7px;
     border-radius: 12px;
