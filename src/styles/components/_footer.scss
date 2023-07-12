@@ -3,10 +3,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: right;
-    color: red;
+    color: #FFC800;
 }
 .credits a{
-    color: #d00000;
+    color: #FFC800;
 }
 .subNav{
     list-style: none;
@@ -23,5 +23,5 @@
 .subNav__el a:focus{
     /* background-color: #A30000;
     color: #1CCCF0; */
-    color: #d00000;
+    color: #FFC800;
 }

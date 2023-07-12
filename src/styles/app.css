@@ -76,7 +76,7 @@ h1 a {
 .sticky-menu a:hover,
 .sticky-menu a.Mactive,
 .sticky-menu a:focus {
-  color: red;
+  color: #FFC800;
 }
 
 .sticky {
@@ -901,11 +901,11 @@ h1 a {
   flex-direction: row;
   align-items: center;
   justify-content: right;
-  color: red;
+  color: #FFC800;
 }
 
 .credits a {
-  color: #d00000;
+  color: #FFC800;
 }
 
 .subNav {
@@ -925,7 +925,7 @@ h1 a {
 .subNav__el a:focus {
   /* background-color: #A30000;
   color: #1CCCF0; */
-  color: #d00000;
+  color: #FFC800;
 }
 
 .footerUi {
@@ -988,12 +988,6 @@ h1 a {
 
 .c4 {
   background-color: #FFC82B;
-  height: 50px;
-  width: 50px;
-}
-
-.c5 {
-  background-color: #D00000;
   height: 50px;
   width: 50px;
 }
@@ -1066,7 +1060,7 @@ h1 a {
 
 .thank a:hover,
 .thank a:focus {
-  color: #D00000;
+  color: #FFC800;
 }
 
 *, ::backdrop {
