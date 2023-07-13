@@ -105,21 +105,32 @@ h1 a {
   height: 72px;
   border-style: solid;
   border-radius: 25px;
-  border-color: #1F2324;
+  border-color: #FFC800;
   margin-top: 50px;
-  color: black;
-  background-color: #FFC800;
+  color: white;
+  background-color: #1F2324;
   font-size: 28px;
   font-family: "Varela Round";
 }
 .intro--btn a {
   text-decoration: none;
-  color: #1F2324;
+  color: white;
   display: flex;
   width: 239px;
   height: 63px;
   align-items: center;
   justify-content: center;
+}
+.intro--btn a:hover,
+.intro a:focus {
+  color: #1F2324;
+  background-color: #FFC800;
+  width: 257px;
+  height: 72px;
+  border-style: solid;
+  border-radius: 25px;
+  margin-top: -3px;
+  margin-left: -10px;
 }
 
 .trace {
@@ -167,6 +178,13 @@ h1 a {
   .intro--btn a {
     width: 211px;
     height: 53px;
+  }
+  .intro--btn a:hover,
+  .intro a:focus {
+    width: 227px;
+    height: 63px;
+    margin-top: -3px;
+    margin-left: -10px;
   }
   .trace {
     width: 772px;
@@ -671,6 +689,9 @@ h1 a {
     border: 1px solid black;
     padding: 7px;
     border-radius: 12px;
+  }
+  .togg-trigger-lim {
+    border-color: #FFC800;
   }
 }
 .limite {
