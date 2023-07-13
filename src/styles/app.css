@@ -678,6 +678,7 @@ h1 a {
   overflow: hidden;
   top: -333px;
   padding-top: 150px;
+  margin-bottom: -332px;
 }
 .limite__fond {
   position: absolute;
@@ -745,6 +746,13 @@ h1 a {
   left: -150px;
   z-index: -1;
 }
+.pilote__marque-2 {
+  rotate: 247deg;
+  position: relative;
+  top: -146px;
+  left: -41px;
+  width: 539px;
+}
 
 @media (max-width: 1320px) {
   .pilote {
@@ -752,6 +760,9 @@ h1 a {
   }
   .pilote__marque {
     left: -330px;
+  }
+  .pilote__marque-2 {
+    left: -154px;
   }
 }
 @media (max-width: 1100px) {
@@ -808,6 +819,9 @@ h1 a {
   }
 }
 @media (max-width: 819px) {
+  .limite {
+    margin-bottom: -110px;
+  }
   .pilote {
     display: none;
   }
@@ -818,6 +832,9 @@ h1 a {
     rotate: 198deg;
     z-index: -1;
     opacity: 10%;
+  }
+  .pilote__marque-2 {
+    display: none;
   }
 }
 @media (max-width: 600px) {
