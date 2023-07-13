@@ -80,5 +80,9 @@
         border: 1px solid black;
         padding: 7px;
         border-radius: 12px;
+
+        &-lim{
+            border-color: #FFC800;
+        }
     }
 }

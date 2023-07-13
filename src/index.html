@@ -28,12 +28,16 @@
 <body>
 
   <header>
+
+    <!-- a changer car on ne met pas de div vide -->
     <div class="fond-header fh"></div>
+
     <img class="logo" src="assets/images/logo-motosafely.svg" alt="Logo de MotoSafely, qui représente un réservoir de moto et le M forme le guidon">
     
     <h1><a href="index.html">Moto Safely</a></h1>
     <nav class="sticky-menu menu sticky">
 
+      <!-- mettre qql chose dans mon btn et le mettre en display none-->
       <button class="menu__burger"></button>
       <ul class="menu__list">
         <li class="menu__el"><a href="#pourquoi" class="">Pourquoi</a></li>
@@ -47,19 +51,9 @@
   <main>
 
     <section class="intro">
-      <!-- changer pour les opti -->
-      <picture>
-        <source media="(min-width: 1281px)" 
-                srcset="assets/images/img-avantage-fleche.png">
-        <source media="(max-width: 819px)" 
-                srcset="assets/images/img-avantage-fleche.png">
         <img class="intro--img" src="assets/images/img-avantage-fleche.png" srcset="assets/images/img-avantage-fleche@2x.png 2x" alt="Photo d'un motard sur la route dans une courbe, le tout mis dans une forme de flèche">
-      </picture>
-      <picture>
-        <source media="(min-width: 1281px)"
-                srcset="assets/images/trace-moto.png"> 
         <img class="trace" src="assets/images/trace-moto.png" srcset="assets/images/trace-moto@2x.png" alt="trace de pneu de moto de couleur noir">
-      </picture>
+      
       <h2 class="intro__titre">Rouler en toute sécurité avec Moto&nbsp;Safely</h2>
 
       <p class="intro__text">C’est une application qui va permettre de répertorier l’état des routes dans nos régions 
@@ -73,13 +67,7 @@
     </section>
 
     <section id="pourquoi" class="why">
-      <picture>
-        <source media="(min-width: 1281px)"
-                srcset="assets/images/photo-moto-modif.png"> 
-        <source media="(max-width: 819px)" 
-                 srcset="assets/images/photo-moto-modif.png">
-        <img class="why--img" src="assets/images/photo-moto-modif.png" alt="pilote moto dans un virage et la photo est sous forme de parallélogramme placé sur la droite de l'écran">
-      </picture>
+      <img class="why--img" src="assets/images/photo-moto-modif.png" alt="pilote moto dans un virage et la photo est sous forme de parallélogramme placé sur la droite de l'écran">
 
       <h2 class="why--title">Pourquoi ce sujet&nbsp;?</h2>
 
@@ -221,7 +209,7 @@
       <div class="limite-grid">
 
         <div class="box-limite">
-          <h3 class="box--title togg-trigger">Fiabilité des informations</h3>
+          <h3 class="box--title togg-trigger togg-trigger-lim">Fiabilité des informations</h3>
           <p class="togg-content hidden">L'exactitude et la fiabilité des informations fournies par l'application peuvent être un défi. 
             Les données sur l'état des routes peuvent varier en fonction de plusieurs facteurs tels que la fréquence 
             des mises à jour, la source des informations et la contribution des utilisateurs. Il est important de s'assurer que 
@@ -230,7 +218,7 @@
         </div>
   
         <div class="box-limite">
-          <h3 class="box--title togg-trigger">Dépendance à Internet</h3>
+          <h3 class="box--title togg-trigger togg-trigger-lim">Dépendance à Internet</h3>
           <p class="togg-content hidden">L'application nécessite une connexion Internet stable pour fonctionner correctement. 
             Dans les zones où la couverture réseau est faible ou inexistante, les motards peuvent rencontrer 
             des difficultés à accéder aux informations en temps réel. Cela peut limiter l'utilité de l'application 
@@ -240,17 +228,17 @@
         </div>
   
         <div class="box-limite">
-          <h3 class="box--title togg-trigger">Participation des utilisateurs</h3>
+          <h3 class="box--title togg-trigger togg-trigger-lim">Participation des utilisateurs</h3>
           <p class="togg-content hidden">Pour que l'application soit efficace, elle dépend de la participation active des utilisateurs pour signaler les problèmes routiers. Cependant, il peut être difficile d'encourager une participation régulière et suffisante de la part des motards. Certains utilisateurs peuvent être réticents à partager des informations ou à contribuer à la communauté de manière constante, ce qui peut affecter la qualité et la quantité des données disponibles.</p>
         </div>
 
         <div class="box-limite">
-          <h3 class="box--title togg-trigger">Limitation des fonctionnalités</h3>
+          <h3 class="box--title togg-trigger togg-trigger-lim">Limitation des fonctionnalités</h3>
           <p class="togg-content hidden">L'application ne peut fournir des informations que sur l'état des routes et ne peut pas prendre en compte tous les facteurs de sécurité. Les autres aspects tels que la présence de conducteurs imprudents, les conditions météorologiques changeantes, les risques spécifiques à certaines régions, etc., ne sont pas pris en compte par l'application. Les motards doivent donc garder à l'esprit ces autres éléments lors de leur conduite.</p>
         </div>
 
         <div class="box-limite distraction">
-          <h3 class="box--title togg-trigger">Distraction</h3>
+          <h3 class="box--title togg-trigger togg-trigger-lim">Distraction</h3>
           <p class="togg-content hidden">L'utilisation d'une application mobile pendant la conduite peut représenter une distraction pour les motards. Lire et interagir avec l'application sur l'écran du téléphone peut détourner leur attention de la route, augmentant ainsi les risques d'accidents. Il est essentiel de rappeler aux motards l'importance de la prudence et du respect des règles de sécurité routière lors de l'utilisation de l'application.</p>
         </div>
       </div>
@@ -265,7 +253,7 @@
       <img class="pilote" src="assets/images/moto-sans-fond-2.png" alt="">
       <img class="pilote__marque" src="assets/images/trace-moto-white.png" alt="">
     </section>
-    
+
       <img class="pilote__marque-2" src="assets/images/trace-moto-jaune.png" alt="">
 
   </main>
