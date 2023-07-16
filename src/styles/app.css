@@ -85,6 +85,10 @@ h1 a {
   width: 100%;
 }
 
+.Tbtn {
+  display: none;
+}
+
 .intro {
   padding-top: 200px;
   max-width: 740px;
