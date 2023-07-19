@@ -90,7 +90,7 @@ h1 a {
 }
 
 .intro {
-  padding-top: 200px;
+  padding-top: 150px;
   max-width: 740px;
   margin-left: auto;
   margin-right: 80px;
@@ -496,7 +496,6 @@ h1 a {
 .interview__text {
   margin-top: 33px;
   max-width: 740px;
-  font-size: 14px;
   min-width: 55ch;
 }
 
@@ -527,7 +526,6 @@ h1 a {
   }
   .interview__text {
     max-width: 310px;
-    font-size: 10px;
     min-width: 0;
   }
   .inter--img {
@@ -1107,6 +1105,10 @@ h1 a {
 
 *, ::backdrop {
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

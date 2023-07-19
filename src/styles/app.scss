@@ -12,6 +12,9 @@
 *, ::backdrop{
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
     background-color: #1F2324;
     font-family: 'Varela', sans-serif;
