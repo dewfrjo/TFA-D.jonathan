@@ -110,6 +110,16 @@
     }
 }
 
+@media (max-width: 819px) {
+    .concu__ensemble{
+        display: flex;
+        flex-direction: column;
+    }
+    .concu__text{
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 600px) {
     .concu{
         left: auto;
@@ -119,7 +129,7 @@
             flex-direction: column;
         }
         &--titre{
-            margin-top: 40px;
+            margin-top: 5px;
             margin-bottom: 0px;
             display: flex;
             justify-content: center;
