@@ -18,7 +18,6 @@
     &__text{
         width: 500px;
         height: 225px;
-        overflow: auto;
         padding: 33px;
     }
     &__ensemble{
@@ -136,9 +135,9 @@
         }
         &__text {
             width: 232px;
-            height: 89px;
-            padding: 35px;
+            height: 220px;
             margin: 0 auto;
+            padding: 33px 0;
         }
         &-simi{
             max-width: 344px;
