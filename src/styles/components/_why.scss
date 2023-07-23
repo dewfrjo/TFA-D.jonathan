@@ -14,16 +14,9 @@
         position: absolute;
         right: -150px;
     }
-    &__text{
-        max-width: 740px;
-        margin-top: 33px;
-        color: #E9F1F7;
-    }
-    &__text2{
-        max-width: 740px;
-        color: #E9F1F7;
-        margin-top: 17px;
-    }
+}
+.w-2{
+    margin-top: 17px;
 }
 
 @media (max-width: 1320px){
@@ -36,9 +29,7 @@
         margin-left: 40px;
         margin-top: 100px;
 
-        &__text{
-            max-width: 480px;
-        }
+        
         &--img{
             width: 420px;
         }
@@ -66,12 +57,6 @@
             opacity: 40%;
         }
         &__text{
-            max-width: 310px;
-            margin-top: 33px;
-            margin-right: 40px;
-        }
-        &__text2{
-            max-width: 310px;
             margin-right: 40px;
         }
     }

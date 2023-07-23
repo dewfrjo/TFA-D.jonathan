@@ -34,19 +34,9 @@
     margin-bottom: 33px;
 }
 .resume{
-    max-width: 740px;
-    min-width: 55ch;
     margin-left: auto;
     margin-top: 150px;
     margin-right: 80px;
-
-    &__2{
-        max-width: 740px;
-        min-width: 55ch;
-        margin-left: auto;
-        margin-top: 33px;
-        margin-right: 80px;
-    }
 }
 .forme{
     position: absolute;
@@ -111,19 +101,9 @@
         }
     }
     .resume{
-        max-width: 500px;
-        min-width: 50ch;
         margin-left: auto;
         margin-top: 50px;
         margin-right: 80px;
-    
-        &__2{
-            max-width: 500px;
-            min-width: 50ch;
-            margin-left: auto;
-            margin-top: 33px;
-            margin-right: 80px;
-        }
     }
     .forme{
         right: -200px;
@@ -174,29 +154,12 @@
             flex-direction: column;
         }
     }
-    .l1, .l2, .l3, .l4, .l5{
-        display: none;
-    }
-    .toggl1, .toggl2, .toggl3, .toggl4, .toggl5{
-        border: 1px solid white;
-        padding: 7px;
-        border-radius: 12px;
-    }
     .forme {
         right: -184px;
         max-width: 266px;
         top: 62%;
     }
     .resume {
-        max-width: 376px;
-        min-width: 0;
-        margin-left: 40px;
-        margin-top: 50px;
-        margin-right: 40px;
-    }
-    .resume__2 {
-        max-width: 376px;
-        min-width: 0;
         margin-left: 40px;
         margin-top: 50px;
         margin-right: 40px;

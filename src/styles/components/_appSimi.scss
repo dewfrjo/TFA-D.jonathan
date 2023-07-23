@@ -60,8 +60,6 @@
         border-radius: 20px;
     }
     &-simi{
-        max-width: 740px;
-        min-width: 55ch;
         padding-top: 100px;
         text-align: center;
         position: relative;
@@ -100,9 +98,6 @@
             width: 295px;
             height: 188px;
         }
-        &-simi{
-            max-width: 625px;
-        }
     }
     .trace-white{
         width: 450px;
@@ -140,8 +135,6 @@
             padding: 33px 0;
         }
         &-simi{
-            max-width: 344px;
-            min-width: 0;
             text-align: start;
         }
     }
