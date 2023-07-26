@@ -83,11 +83,6 @@ h1 a{
     display: none;
 }
 
-// .content{
-//     height: 100%;
-//     overflow: hidden;
-// }
-
 .intro{
     padding-top: 150px;
     max-width: 740px;
@@ -238,7 +233,7 @@ h1 a{
     .menu__el{
         transform: translateY(-20px);
         opacity: 0;
-        transition: all .5s .5s cubic-bezier(0.16, 1, 0.3, 1);
+        transition: all .5s 0s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .menu--open .menu__el{
@@ -312,10 +307,7 @@ h1 a{
             list-style: none;
             overflow: hidden;
             color: #E9F1F7;
-            width: 23%;
-            margin-top: 50px;
-            margin-left: auto;
-            right: 40px;
+            margin: 80px 80px 50px 60px;
         }
     }
     .intro{
