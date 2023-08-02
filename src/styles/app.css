@@ -604,7 +604,7 @@ h1 a {
 }
 .avantage {
   background-color: white;
-  background-image: url(../../assets/images/fond-relief.svg);
+  background-image: url(../assets/images/fond-relief.svg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 150px;
