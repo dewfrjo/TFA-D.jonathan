@@ -11,33 +11,10 @@ function toggleMenu() {
 if (menuBurger) {
   menuBurger.addEventListener('click', toggleMenu);
 }
-// Fermer le menu en cliquant en dehors du menu ou sur un lien de navigation
-// document.addEventListener('click', function(event) {
-//   const target = event.target;
-//   const isMenuOpen = menue.classList.contains('menu--open');
-//   const isTargetInsideMenu = menue.contains(target);
-  
-//   if (isMenuOpen && !isTargetInsideMenu) {
-//     toggleMenu();
-//   }
-// });
 
 // Sélectionnez tous les liens de votre menu
 var navLinks = document.querySelectorAll('.menu li a');
 
-// // Parcourir les liens du menu
-// navLinks.forEach(function(link) {
-//   // Ajouter un écouteur d'événement de clic à chaque lien
-//   link.addEventListener('click', function() {
-//     // Supprimer la classe "active" de tous les liens du menu
-//     navLinks.forEach(function(link) {
-//       link.classList.remove('Mactive');
-//     });
-
-//     // Ajouter la classe "active" au lien sur lequel vous avez cliqué
-//   //   this.classList.add('Mactive');
-//   });
-// });
 
 // Fonction pour mettre à jour l'état actif du menu lors du défilement
 function updateMenuState() {
@@ -68,6 +45,14 @@ function updateMenuState() {
 
 // Ajouter un écouteur d'événement de défilement pour mettre à jour l'état du menu
 window.addEventListener('scroll', updateMenuState);
+
+// transformer le menu en croix en rajoutant la class active
+const burger = document.querySelector(".burger");
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+});
+
 
 //pour faire pop ou non mon text dans la partie avantege et limite en version tel
 let togTriggers = document.querySelectorAll(".togg-trigger");
