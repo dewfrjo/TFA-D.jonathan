@@ -110,8 +110,8 @@ h1 a{
         text-decoration: none;
         color: white;
         display: flex;
-        width: 239px;
-        height: 63px;
+        width: 256px;
+        height: 71px;
         align-items: center;
         justify-content: center;
     }
@@ -119,12 +119,13 @@ h1 a{
     a:focus{
         color: #1F2324;
         background-color: #FFC800;
-        width: 257px;
-        height: 72px;
+        width: 256px;
+        height: 71px;
         border-style: solid;
         border-radius: 25px;
-        margin-top: -3px;
-        margin-left: -10px;
+        border-color: #FFC800;
+        margin-left: -1px;
+        margin-top: -1px;
     } 
 }
 .trace{
@@ -169,15 +170,13 @@ h1 a{
             font-size: 18px;
         }
         &--btn a{
-            width: 211px;
-            height: 53px;
+            width: 224px;
+            height: 60px;
         }
         &--btn a:hover,
     a:focus{
         width: 227px;
         height: 63px;
-        margin-top: -3px;
-        margin-left: -10px;
     } 
     }
     .trace{
@@ -381,8 +380,8 @@ h1 a{
             font-size: 16px;
         }
         &--btn a{
-            width: 163px;
-            height: 45px;
+            width: 178px;
+            height: 52px;
         }
     }
 }
