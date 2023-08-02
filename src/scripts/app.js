@@ -49,9 +49,11 @@ window.addEventListener('scroll', updateMenuState);
 // transformer le menu en croix en rajoutant la class active
 const burger = document.querySelector(".burger");
 
-burger.addEventListener('click', () => {
-  burger.classList.toggle('active');
-});
+if (burger) {
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+  });
+}
 
 
 //pour faire pop ou non mon text dans la partie avantege et limite en version tel
