@@ -28,32 +28,32 @@
         row-gap: 33px;
     }
     &__waze{
-        background-image: url(../../assets/images/waze.svg);
+        background-image: url(../assets/images/waze.svg);
         background-repeat: no-repeat;
         background-size: 100%;
         border-radius: 20px;
     }
     &__google{
-        background-image: url(../../assets/images/google-maps.svg);
+        background-image: url(../assets/images/google-maps.svg);
         background-repeat: no-repeat;
         background-size: 100%;
         border-radius: 20px;
     }
     &__coyote{
-        background-image: url(../../assets/images/coyote.svg);
+        background-image: url(../assets/images/coyote.svg);
         background-repeat: no-repeat;
         background-size: 100%;
         border-radius: 20px;
     }
     &__mappy{
-        background-image: url(../../assets/images/mappy.svg);
+        background-image: url(../assets/images/mappy.svg);
         background-repeat: no-repeat;
         background-size: 100%;
         border-radius: 20px;
     }
     &__michelin{
         grid-column: 1 / 3;
-        background-image: url(../../assets/images/via-michelin.svg);
+        background-image: url(../assets/images/via-michelin.svg);
         background-repeat: no-repeat;
         background-size: 100%;
         border-radius: 20px;
